@@ -37,3 +37,10 @@ bindkey '^[[5D' beginning-of-line
 bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^?' backward-delete-char
+
+
+# Make sure that we don't escape the command prompt when e.g. perforce wants 
+# to invoke the editor
+export VISUAL=vi
+export EDITOR=vi
+
