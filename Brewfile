@@ -2,6 +2,7 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 tap 'puma/puma'
+tap 'homebrew/completions'
 
 brew 'ack'
 brew 'coreutils'
@@ -28,6 +29,9 @@ brew 'unrar'
 brew 'wget'
 brew 'yarn'
 brew 'youtube-dl'
+brew 'docker-completion'
+brew 'docker-compose-completion'
+brew 'docker-machine-completion'
 
 cask '1password'
 cask 'beyond-compare'
