@@ -43,4 +43,5 @@ bindkey '^?' backward-delete-char
 # to invoke the editor
 export VISUAL=vi
 export EDITOR=vi
+export TARGETPLATFORM=unix
 
