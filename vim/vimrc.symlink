@@ -3,11 +3,11 @@ syntax on
 set autoindent
 set cindent
 set sw=4
-set hlsearch
-set incsearch
 
+set nocompatible ruler laststatus=2 showcmd showmode 
+set incsearch ignorecase smartcase hlsearch
 
-
+set shortmess+=I
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
@@ -36,6 +36,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'Shougo/unite.vim'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 
