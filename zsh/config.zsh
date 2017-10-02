@@ -45,3 +45,5 @@ export VISUAL=vi
 export EDITOR=vi
 export TARGETPLATFORM=unix
 
+export DOCKERUSER=`id -u`
+export MYHOST_FQDN=`hostname -f`
