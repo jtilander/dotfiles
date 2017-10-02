@@ -18,5 +18,7 @@
 	{ "keys": ["ctrl+k", "super+u"], "command": "upper_case" },
 	{ "keys": ["ctrl+k", "super+l"], "command": "lower_case" },
 	{ "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
-
+	{ "keys": ["f8"], "command": "next_result" },
+	{ "keys": ["shift+f8"], "command": "prev_result" },
+	{ "keys": ["super+enter"], "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "hh", "h", "ipp", "inl", "m", "mm"]} },
 ]

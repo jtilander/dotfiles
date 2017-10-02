@@ -24,5 +24,14 @@
 { "key": "ctrl+backspace",     "command": "deleteWordLeft",
                                "when": "editorTextFocus && !editorReadonly" },
 { "key": "ctrl+delete",        "command": "deleteWordRight",
-                               "when": "editorTextFocus && !editorReadonly" }
-]
+                            "when": "editorTextFocus && !editorReadonly"
+                        },
+                        {
+                            "key": "f7",
+                            "command": "workbench.action.tasks.build"
+                        },
+                        {
+                            "key": "shift+cmd+b",
+                            "command": "-workbench.action.tasks.build"
+                        }
+                    ]
