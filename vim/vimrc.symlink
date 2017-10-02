@@ -29,6 +29,8 @@ filetype indent plugin on
 call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'w0rp/ale'
 call plug#end()
 
 
@@ -81,3 +83,12 @@ let g:ctrlp_custom_ignore = {
 "
 colorscheme molokai
 let g:rehash256 = 1
+
+
+
+
+"
+" Linter and Airline integration
+"
+" Set this. Airline will handle the rest.
+let g:airline#extensions#ale#enabled = 1
