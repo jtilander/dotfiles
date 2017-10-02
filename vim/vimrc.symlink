@@ -1,4 +1,83 @@
 syntax on
 
+set autoindent
+set cindent
+set sw=4
+set hlsearch
+set incsearch
+
+
+
+
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+call plug#begin()
+Plug 'tpope/vim-sensible'
+Plug 'ctrlpvim/ctrlp.vim'
+call plug#end()
+
+
+" Vundle configuration
+" Plugin 'ctrlpvim/ctrlp.vim'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+" 
+" Configure CTRL-P find files
+"
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
+
+
+
+
+
+
+
+
+"
+" Configure molokai color scheme
+"
+colorscheme molokai
+let g:rehash256 = 1
