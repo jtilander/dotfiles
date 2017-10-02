@@ -15,3 +15,8 @@ fi
 if [ ! -f ~/.vim/colors/molokai.vim ]; then
 	curl -SsLo ~/.vim/colors/molokai.vim --create-dirs https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 fi
+
+
+# Install the plugins listed.
+vim -c "PlugInstall" -c "qall"  > /dev/null 2>&1
+

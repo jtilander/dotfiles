@@ -3,7 +3,17 @@
 	"font_size": 15,
 	"ignored_packages":
 	[
+		"Alignment",
+		"Golang Build",
+		"Google Spell Check",
+		"Hosts",
+		"Indent XML",
+		"Jinja2",
 		"Markdown",
+		"nginx",
+		"PowerShell",
+		"StringEncode",
+		"sublime-sum",
 		"Vintage"
 	],
 	"word_wrap": "false"
