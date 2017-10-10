@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Anaconda",
+		"ArcticTypescript",
 		"CMake",
 		"Dockerfile Syntax Highlighting",
 		"Git",
@@ -15,9 +16,12 @@
 		"Markdown Preview",
 		"MarkdownEditing",
 		"MarkdownLivePreview",
+		"nginx",
 		"Package Control",
 		"Puppet",
 		"Solarized Color Scheme",
-		"SublimeLinter-contrib-puppet-lint"
+		"SublimeLinter-contrib-nginx-lint",
+		"SublimeLinter-contrib-puppet-lint",
+		"TypeScript Syntax"
 	]
 }
