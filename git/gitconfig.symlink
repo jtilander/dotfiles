@@ -4,12 +4,13 @@
 [hub]
         protocol = https
 [alias]
-        co = checkout
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
+        co                = checkout
+        promote           = !$ZSH/bin/git-promote
+        wtf               = !$ZSH/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors
-        count   = !git shortlog -sn
-        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        count             = !git shortlog -sn
+        lg                = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        up                = pull --ff-only --all -p
 [color]
         diff = auto
         status = auto
@@ -32,3 +33,5 @@
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
+[pull]
+	ff = only
