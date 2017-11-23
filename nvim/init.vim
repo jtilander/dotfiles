@@ -23,16 +23,16 @@
 		Plug 'vim-airline/vim-airline'
 		Plug 'vim-airline/vim-airline-themes'
 		
-        " Puppet
-        Plug 'rodjek/vim-puppet'
-        Plug 'puppetlabs/puppet-syntax-vim'
-        
-        " Python
-        " Plug 'zchee/deoplete-jedi'
-        
-        " Git helpers
-        Plug 'tpope/vim-fugitive'
-        Plug 'airblade/vim-gitgutter'
+		" Puppet
+		Plug 'rodjek/vim-puppet'
+		Plug 'puppetlabs/puppet-syntax-vim'
+		
+		" Python
+		" Plug 'zchee/deoplete-jedi'
+		
+		" Git helpers
+		Plug 'tpope/vim-fugitive'
+		Plug 'airblade/vim-gitgutter'
 
 		" Searching 
 		Plug 'ervandew/ag'
@@ -40,7 +40,7 @@
 
 
 		" Code completeion
-		Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+		" Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 		" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 		" Code formatting
@@ -113,10 +113,10 @@
 	set sw=4
 
 	" Text wrap options (disable text-wrap) {
-	    set textwidth=0 
-	    set wrapmargin=0
-	    set formatoptions-=t
-	    set nowrap
+		set textwidth=0 
+		set wrapmargin=0
+		set formatoptions-=t
+		set nowrap
 	"}
 
 	" Format overrides based on file type
@@ -142,38 +142,38 @@
 " ----------------------------------------------------------------------------
 
 	" NERDTree {
-	    " Automatically show NERDTree if no files are specified when
-	    " launching vim 
-	    autocmd StdinReadPre * let s:std_in=1
-	    autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-	    set splitright
+		" Automatically show NERDTree if no files are specified when
+		" launching vim 
+		autocmd StdinReadPre * let s:std_in=1
+		autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+		set splitright
 
-	    map <F2> :NERDTreeToggle<CR>
+		map <F2> :NERDTreeToggle<CR>
 
-	    " Case-sensitive sorting
-	    let g:NERDTreeCaseSensitiveSort = 1
+		" Case-sensitive sorting
+		let g:NERDTreeCaseSensitiveSort = 1
 	" }
 
-    " puppet {
-        " Enable syntax highlighting for puppet modules.
-        autocmd BufNewFile,BufRead *.pp set syntax=puppet
-        autocmd BufNewFile,BufRead *.pp set autoread
-        autocmd BufNewFile,BufRead *.pp setfiletype puppet
-    " }
-    
-    " python {
-        let g:deoplete#sources#jedi#show_docstring = 1
-        let g:neomake_python_enabled_makers = ['flake8']
-        au FileType python au! BufWritePost * Neomake
-    " }
+	" puppet {
+		" Enable syntax highlighting for puppet modules.
+		autocmd BufNewFile,BufRead *.pp set syntax=puppet
+		autocmd BufNewFile,BufRead *.pp set autoread
+		autocmd BufNewFile,BufRead *.pp setfiletype puppet
+	" }
+	
+	" python {
+		let g:deoplete#sources#jedi#show_docstring = 1
+		let g:neomake_python_enabled_makers = ['flake8']
+		au FileType python au! BufWritePost * Neomake
+	" }
 
 
-    " Solarized color scheme {
+	" Solarized color scheme {
 		let g:solarized_termcolors=256
-  		let g:solarized_termtrans=1
-    	set background=dark
+		let g:solarized_termtrans=1
+		set background=dark
 		colorscheme molokai
-    " }
+	" }
 
 	" Molokai color scheme {
 		let g:rehash256 = 1

@@ -4,11 +4,11 @@
 #
 
 # Because we assume you installed it with Brew.
-if [ "$(uname -s)" = "Darwin" ]; then
-	if [ ! -f /usr/local/bin/vim ]; then
-		ln -s /usr/local/bin/nvim /usr/local/bin/vim
-	fi
-fi
+# if [ "$(uname -s)" = "Darwin" ]; then
+# 	if [ ! -f /usr/local/bin/vim ]; then
+# 		ln -s /usr/local/bin/nvim /usr/local/bin/vim
+# 	fi
+# fi
 
 if [ ! -f ~/.local/share/nvim/site/autoload/plug.vim ]; then
 	curl -SsfLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
