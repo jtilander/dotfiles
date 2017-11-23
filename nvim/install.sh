@@ -234,15 +234,30 @@ cat ~/.config/nvim/init.vim  <<EOF
 
 " ----------------------------------------------------------------------------
 "
+command -bang -nargs=? QFix call QFixToggle(<bang>0)
+function! QFixToggle(forced)
+  if exists("g:qfix_win") && a:forced == 0
+    cclose
+    unlet g:qfix_win
+  else
+    copen 10
+    let g:qfix_win = bufnr("$")
+  endif
+endfunction
+
+" ----------------------------------------------------------------------------
+"
 " Keyboard bindings
 "
 " ----------------------------------------------------------------------------
 
+
 	nnoremap <C-p> :FZF<CR>
-	nnoremap <C-f> :Ag 
+	nnoremap <C-f> :Ag! 
 	nnoremap <F7> :make<CR>
 	nnoremap <F8> :cnext<CR>
-	nnoremap <F12> :copen<CR>
+	nnoremap <S-F8> :cprevious<CR>
+	nnoremap <F12> :QFix<CR>
 	nnoremap <M-ESC> :q<CR>
 
 
