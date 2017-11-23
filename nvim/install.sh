@@ -255,8 +255,8 @@ endfunction
 	nnoremap <C-p> :FZF<CR>
 	nnoremap <C-f> :Ag! 
 	nnoremap <F7> :make<CR>
-	nnoremap <F8> :cnext<CR>
-	nnoremap <S-F8> :cprevious<CR>
+	nnoremap <F4> :cnext!<CR>
+	nnoremap <F3> :cprev!<CR>
 	nnoremap <F12> :QFix<CR>
 	nnoremap <M-ESC> :q<CR>
 
