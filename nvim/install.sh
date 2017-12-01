@@ -137,6 +137,9 @@ cat ~/.config/nvim/init.vim  <<EOF
 	"set inccommand=nosplit
 	"set lazyredraw
 
+	" Highlight searches
+	set hlsearch
+	highlight Search cterm=NONE
 
 
 " ----------------------------------------------------------------------------
