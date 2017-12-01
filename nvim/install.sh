@@ -107,7 +107,9 @@ cat ~/.config/nvim/init.vim  <<EOF
 	set autoread
 	set backspace=indent,eol,start
 	set visualbell
-	set backup
+	set nobackup
+	set nowritebackup
+	set noswapfile
 	set clipboard=unnamed
 	set directory-=.
 	set encoding=utf-8

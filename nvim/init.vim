@@ -64,9 +64,9 @@
 	set autoread
 	set backspace=indent,eol,start
 	set visualbell
-	set nobackup       #no backup files
-	set nowritebackup  #only in case you don't want a backup file while editing
-	set noswapfile     #no swap files	set clipboard=unnamed
+	set nobackup
+	set nowritebackup
+	set noswapfile
 	set directory-=.
 	set encoding=utf-8
 	set expandtab
