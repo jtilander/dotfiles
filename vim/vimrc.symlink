@@ -83,7 +83,7 @@
 	set splitbelow splitright
 	set showcmd
 	set smartcase
-	set undofile
+	set noundofile
 	set softtabstop=4
 	set tabstop=4
 	set wildignore=log/**,node_modules/**,target/**,tmp/**
