@@ -41,6 +41,9 @@ defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.Web
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 
+# Set 24h clock in the menubar
+defaults write com.apple.menuextra.clock DateFormat -string "EEE H:mm"
+
 # Setup proper keybindings for home / end
 if [ ! -d ~/Library/KeyBindings ]; then
 	mkdir -p ~/Library/KeyBindings
