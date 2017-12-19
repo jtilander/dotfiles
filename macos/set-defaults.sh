@@ -39,3 +39,19 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
+
+# Setup proper keybindings for home / end
+if [ ! -d ~/Library/KeyBindings ]; then
+	mkdir -p ~/Library/KeyBindings
+fi
+cat > ~/Library/KeyBindings/DefaultKeyBinding.dict <<EOM
+{
+    "\UF729"  = "moveToBeginningOfLine:";
+    "$\UF729" = "moveToBeginningOfLineAndModifySelection:";
+    "\UF72B"  = "moveToEndOfLine:";
+    "$\UF72B" = "moveToEndOfLineAndModifySelection:";
+    "\UF72C"  = "pageUp:";
+    "\UF72D"  = "pageDown:";
+}
+EOM
