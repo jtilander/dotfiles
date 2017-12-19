@@ -19,9 +19,9 @@ fi
 
 while read gemname; do
   if [ "$(uname -s)" == "Darwin" ]; then
-  	brew gem install $gemname
+    brew gem info $gemname > /dev/null 2>&1 || brew gem install $gemname
   else
-  	sudo gem install $gemname
+    sudo gem info $gemname > /dev/null 2>&1 || gem install $gemname
   fi
 done < "ruby/global.gems"
 
