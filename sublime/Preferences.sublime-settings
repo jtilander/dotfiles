@@ -3,21 +3,12 @@
 	[
 		"Activision"
 	],
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"draw_white_space": "all",
 	"font_size": 16,
 	"ignored_packages":
 	[
-		"Alignment",
-		"Golang Build",
-		"Google Spell Check",
-		"Hosts",
-		"Indent XML",
-		"Jinja2",
-		"PowerShell",
-		"StringEncode",
-		"sublime-sum",
-		"Vintage"
+		"sublime-sum"
 	],
 	"word_wrap": "false"
 }
