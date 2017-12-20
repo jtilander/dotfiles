@@ -2,11 +2,7 @@
 export ZSH=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
-if [ -d ~/work/ct ]; then
-	export PROJECTS=~/work/ct
-else
-	export PROJECTS=~/work
-fi
+export PROJECTS=$HOME/work
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
