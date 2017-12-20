@@ -44,6 +44,13 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 # Set 24h clock in the menubar
 defaults write com.apple.menuextra.clock DateFormat -string "EEE H:mm"
 
+
+# Reduce motion and make contrast higher
+defaults write com.apple.universalaccess reduceMotion -int 1
+defaults write com.apple.universalaccess increaseContrast -int 1
+defaults write com.apple.universalaccess reduceTransparency -int 1
+
+
 # Setup proper keybindings for home / end
 if [ ! -d ~/Library/KeyBindings ]; then
 	mkdir -p ~/Library/KeyBindings
