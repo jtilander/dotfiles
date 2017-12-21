@@ -37,6 +37,7 @@ brew 'vim'
 brew 'wget'
 brew 'yarn'
 brew 'youtube-dl'
+brew 'hugo'
 
 ###
 ###
