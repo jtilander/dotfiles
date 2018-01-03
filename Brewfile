@@ -40,6 +40,13 @@ brew 'wget'
 brew 'yarn'
 brew 'youtube-dl'
 
+
+## HACK: In order to install delve https://github.com/go-delve/homebrew-delve/issues/19#issuecomment-330442033
+# cd $HOME/Library/Caches/Homebrew
+# tar xf delve-*.gz
+# go into directory ( mine is delve-1.0.0-rc.1 )
+# sh scripts/gencert.sh
+
 ###
 ###
 ###
