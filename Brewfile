@@ -15,8 +15,10 @@ brew 'docker-machine-completion'
 brew 'exa'
 brew 'fzf'
 brew 'go'
+brew 'go-delve/delve/delve'
 brew 'grc'
 brew 'htop'
+brew 'hugo'
 brew 'iftop'
 brew 'imagemagick'
 brew 'jp2a'
@@ -37,7 +39,6 @@ brew 'vim'
 brew 'wget'
 brew 'yarn'
 brew 'youtube-dl'
-brew 'hugo'
 
 ###
 ###
