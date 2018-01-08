@@ -20,3 +20,6 @@ fi
 # Install the plugins listed.
 vim -c "PlugInstall" -c "qall"  > /dev/null 2>&1
 
+# Now since go-vim is installed, let's install the dependencies
+# vim -c "GoInstallBinaries" -c "qall"  > /dev/null 2>&1
+

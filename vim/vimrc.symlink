@@ -49,6 +49,8 @@
 		" Rainbow parantheses
 		Plug 'luochen1990/rainbow'
 
+		" GO 
+		Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 
 	call plug#end()
 
