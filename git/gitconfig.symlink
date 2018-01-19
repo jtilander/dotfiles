@@ -11,6 +11,9 @@
         count             = !git shortlog -sn
         lg                = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
         up                = pull --ff-only --all -p
+        pom               = push origin master
+        fom               = fetch origin master:master
+        plom              = pull origin master
 [color]
         diff = auto
         status = auto
