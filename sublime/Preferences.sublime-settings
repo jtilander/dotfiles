@@ -9,7 +9,7 @@
 	"ignored_packages":
 	[
 		"sublime-sum",
-        "Vintage"
+		"Vintage"
 	],
 	"word_wrap": "false"
 }
