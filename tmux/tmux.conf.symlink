@@ -1,5 +1,7 @@
 # TMUX conf
 
+set-option -g default-shell /bin/zsh
+
 # Bind the prefix key to ctrl-a
 unbind C-b
 set-option -g prefix C-a
