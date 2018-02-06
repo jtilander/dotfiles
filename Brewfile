@@ -69,4 +69,4 @@ cask 'sublime-text'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'xquartz'
-
+cask 'pgAdmin4'
