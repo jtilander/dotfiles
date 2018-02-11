@@ -1,0 +1,24 @@
+#!/bin/bash
+set -e
+
+if [ -z $1 ]; then
+	echo "Usage: $0 <host> <service> <port>"
+	echo "Creates a persistent local tunnel through the ssh link"
+	exit 1
+fi
+
+CONTAINERHOST=$1
+SERVICENAME=$2
+LOCALPORT=$3
+SERVICEPORT=$3
+CONTAINERPORT=2223
+
+exec ssh \
+	-o UserKnownHostsFile=/dev/null \
+	-o StrictHostKeyChecking=no \
+	-o ServerAliveInterval=5 \
+	-o ServerAliveCountMax=1 \
+	-l root \
+	-L localhost:${LOCALPORT}:${SERVICENAME}:${SERVICEPORT} \
+	-p ${CONTAINERPORT} \
+	${CONTAINERHOST}
