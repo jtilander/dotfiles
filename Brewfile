@@ -7,6 +7,7 @@ brew 'ack'
 brew 'ag'
 brew 'brew-gem'
 brew 'bvi'
+brew 'clang-format'
 brew 'coreutils'
 brew 'ctags'
 brew 'docker-completion'
@@ -39,7 +40,6 @@ brew 'vim'
 brew 'wget'
 brew 'yarn'
 brew 'youtube-dl'
-
 
 ## HACK: In order to install delve https://github.com/go-delve/homebrew-delve/issues/19#issuecomment-330442033
 # cd $HOME/Library/Caches/Homebrew
