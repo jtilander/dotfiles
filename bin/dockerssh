@@ -2,15 +2,15 @@
 set -e
 
 if [ -z $1 ]; then
-	echo "Usage: $0 <host> <service> <port>"
+	echo "Usage: $0 <host> <myport> <service> <port>"
 	echo "Creates a persistent local tunnel through the ssh link"
 	exit 1
 fi
 
 CONTAINERHOST=$1
-SERVICENAME=$2
-LOCALPORT=$3
-SERVICEPORT=$3
+LOCALPORT=$2
+SERVICENAME=$3
+SERVICEPORT=$4
 CONTAINERPORT=2223
 
 exec ssh \
