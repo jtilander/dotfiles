@@ -1,0 +1,26 @@
+#!/bin/sh
+REMOTEUSER=${REMOTEUSER:-root}
+REMOTEPORT=${REMOTEPORT:-22}
+HOSTSFILE=$1
+shift
+
+if [ -z "$1" ]; then
+    echo Usage: $0 hostfile commandline
+    exit 1
+fi
+
+while read h; do
+    if [ -z "$h" ]; then
+        continue
+    fi
+    ssh \
+    -o UserKnownHostsFile=/dev/null \
+    -o StrictHostKeyChecking=no \
+    -o ServerAliveInterval=5 \
+    -o ServerAliveCountMax=1 \
+    -l $REMOTEUSER \
+    -p $REMOTEPORT \
+    $h "$@" < /dev/null 2>/dev/null | sed -e "s/^/$h: /" &
+done < $HOSTSFILE
+
+wait
