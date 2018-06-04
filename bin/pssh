@@ -9,6 +9,10 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
+if [ "$HOSTSFILE" == "-" ]; then
+    HOSTSFILE=/dev/stdin
+fi
+
 while read h; do
     if [ -z "$h" ]; then
         continue
