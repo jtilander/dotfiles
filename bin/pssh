@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 REMOTEUSER=${REMOTEUSER:-root}
 REMOTEPORT=${REMOTEPORT:-22}
 HOSTSFILE=$1
@@ -17,6 +17,11 @@ while read h; do
     if [ -z "$h" ]; then
         continue
     fi
+
+    if [[ ${h:0:1} == '#' ]]; then
+        continue
+    fi
+
     ssh \
     -o UserKnownHostsFile=/dev/null \
     -o StrictHostKeyChecking=no \
