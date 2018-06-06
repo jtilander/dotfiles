@@ -18,10 +18,15 @@ while read h; do
         continue
     fi
 
+    # Ignore comments starting with # in the line
     if [[ ${h:0:1} == '#' ]]; then
         continue
     fi
 
+    # Remove everything past the colon
+    host=${h%:*}
+
+    # Actually ssh, ignoring host keys and prefixing the output.
     ssh \
     -o UserKnownHostsFile=/dev/null \
     -o StrictHostKeyChecking=no \
@@ -29,7 +34,8 @@ while read h; do
     -o ServerAliveCountMax=1 \
     -l $REMOTEUSER \
     -p $REMOTEPORT \
-    $h "$@" < /dev/null 2>/dev/null | sed -e "s/^/$h: /" &
+    $host "$@" < /dev/null 2>/dev/null | sed -e "s/^/$host: /" &
+
 done < $HOSTSFILE
 
 wait
