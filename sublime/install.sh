@@ -5,7 +5,7 @@ if [ "$(uname -s)" == "Darwin" ]; then
 	prefix="$HOME/Library/Application Support/Sublime Text 3"
 	keymap="Default (OSX).sublime-keymap"
 else
-	prefix="$HOME/.config/sublime-text-3"
+	prefix  ="$HOME/.config/sublime-text-3"
 	keymap="Default (Linux).sublime-keymap"
 fi
 

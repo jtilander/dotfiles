@@ -5,11 +5,11 @@
 	],
 	"installed_packages":
 	[
+		"Align Arguments",
 		"AlignTab",
 		"Anaconda",
 		"ANTLR syntax highlight",
 		"ArcticTypescript",
-		"AutoAligner",
 		"Clang Format",
 		"CMake",
 		"DashDoc",
