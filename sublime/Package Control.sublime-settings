@@ -31,6 +31,7 @@
 		"SublimeLinter",
 		"SublimeLinter-contrib-nginx-lint",
 		"SublimeLinter-contrib-puppet-lint",
+		"SublimeLinter-shellcheck",
 		"TypeScript Syntax"
 	]
 }
