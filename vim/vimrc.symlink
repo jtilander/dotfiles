@@ -170,7 +170,6 @@
 	" python {
 		let g:deoplete#sources#jedi#show_docstring = 1
 		let g:neomake_python_enabled_makers = ['flake8']
-		au FileType python au! BufWritePost * Neomake
 	" }
 
 
