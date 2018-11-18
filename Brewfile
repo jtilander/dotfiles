@@ -85,3 +85,10 @@ cask 'sublime-text'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'xquartz'
+
+cask 'quicklook-pfm'
+#cask 'qlmarkdown'
+cask 'MeshQuickLookPlugin'
+cask 'QLMarkdownGFM'
+cask 'QLColorCode'
+
