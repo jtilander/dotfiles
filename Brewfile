@@ -2,6 +2,8 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 tap 'jesseduffield/lazygit'
+tap 'thii/xcbeautify'
+brew 'xcbeautify'
 
 #tap 'homebrew/completions'
 
