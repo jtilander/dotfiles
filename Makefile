@@ -6,5 +6,5 @@ update:
 	./bin/dot
 
 provision:
-	./scripts/bootstrap
+	./script/bootstrap
 
