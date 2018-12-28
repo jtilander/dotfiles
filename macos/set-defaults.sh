@@ -46,9 +46,12 @@ defaults write com.apple.menuextra.clock DateFormat -string "EEE H:mm"
 
 
 # Reduce motion and make contrast higher
-defaults write com.apple.universalaccess reduceMotion -int 1
-defaults write com.apple.universalaccess increaseContrast -int 1
-defaults write com.apple.universalaccess reduceTransparency -int 1
+if ! defaults read com.apple.universalaccess reduceMotion | grep 1 > /dev/null ; then
+	echo "Setting default accessibility options, need root access:"
+	sudo defaults write com.apple.universalaccess reduceMotion -int 1
+	sudo defaults write com.apple.universalaccess increaseContrast -int 1
+	sudo defaults write com.apple.universalaccess reduceTransparency -int 1
+fi
 
 
 # Setup proper keybindings for home / end
