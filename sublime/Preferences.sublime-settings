@@ -3,12 +3,13 @@
 	[
 		"Activision"
 	],
-	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"color_scheme": "Packages/Monokai++/themes/Monokai++.tmTheme",
 	"draw_white_space": "all",
 	"font_size": 15,
 	"ignored_packages":
 	[
 		"ANTLR syntax highlight",
+		"GoSublime",
 		"sublime-sum",
 		"Vintage"
 	],

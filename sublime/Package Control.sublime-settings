@@ -2,6 +2,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"GoSublime"
 	],
 	"installed_packages":
 	[
@@ -21,6 +22,7 @@
 		"Indent XML",
 		"Line Endings Unify",
 		"MarkdownLight",
+		"Monokai++",
 		"NASM x86 Assembly",
 		"nginx",
 		"Package Control",
@@ -33,6 +35,7 @@
 		"SublimeLinter-contrib-nginx-lint",
 		"SublimeLinter-contrib-puppet-lint",
 		"SublimeLinter-shellcheck",
+		"Theme - Seti Monokai",
 		"TypeScript Syntax"
 	]
 }
