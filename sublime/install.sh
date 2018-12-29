@@ -53,6 +53,7 @@ if [ ! -f "$prefix/Installed Packages/Package Control.sublime-package" ]; then
 fi
 echo 'Linking SublimeText preferences'
 symlink_preference 'User' 'Preferences.sublime-settings'
+symlink_preference 'User' 'Distraction Free.sublime-settings'
 symlink_preference 'User' 'Anaconda.sublime-settings'
 symlink_preference 'User' 'Package Control.sublime-settings'
 symlink_preference 'User' "$keymap"

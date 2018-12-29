@@ -3,13 +3,12 @@
 	[
 		"Activision"
 	],
-	"color_scheme": "Packages/Monokai++/themes/Monokai++.tmTheme",
+	"color_scheme": "Packages/Theme - Seti Monokai/scheme/Seti Monokai.tmTheme",
 	"draw_white_space": "all",
-	"font_size": 15,
+	"font_size": 17,
 	"ignored_packages":
 	[
 		"ANTLR syntax highlight",
-		"GoSublime",
 		"sublime-sum",
 		"Vintage"
 	],
