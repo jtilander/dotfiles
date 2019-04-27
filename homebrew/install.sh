@@ -4,9 +4,10 @@
 #
 # This installs some of the common dependencies needed (or at least desired)
 # using Homebrew.
+export HOMEBREW_NO_ANALYTICS=1
 
 if [ "$(uname -s)" != "Darwin" ]; then
-	exit 0
+  exit 0
 fi
 
 
@@ -24,6 +25,7 @@ then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   fi
 
+  brew analytics off
 fi
 
 exit 0

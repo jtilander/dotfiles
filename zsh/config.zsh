@@ -47,3 +47,4 @@ export TARGETPLATFORM=unix
 
 export DOCKERUSER=`id -u`
 export MYHOST_FQDN=`hostname -f`
+export HOMEBREW_NO_ANALYTICS=1
