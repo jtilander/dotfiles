@@ -1,44 +1,44 @@
 # Local/private config goes in the include
 [include]
-        path = ~/.gitconfig.local
+    path = ~/.gitconfig.local
 [hub]
-        protocol = https
+    protocol = https
 [alias]
-        co                = checkout
-        promote           = !$ZSH/bin/git-promote
-        wtf               = !$ZSH/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
-        count             = !git shortlog -sn
-        lg                = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-        up                = pull --ff-only --all -p
-        pom               = push origin master
-        fom               = fetch origin master:master
-        plom              = pull origin master
+    co                = checkout
+    promote           = !$ZSH/bin/git-promote
+    wtf               = !$ZSH/bin/git-wtf
+    rank-contributors = !$ZSH/bin/git-rank-contributors
+    count             = !git shortlog -sn
+    lg                = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    up                = pull --ff-only --all -p
+    pom               = push origin master
+    fom               = fetch origin master:master
+    plom              = pull origin master
 [color]
-        diff = auto
-        status = auto
-        branch = auto
-        ui = true
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
 [core]
-        excludesfile = ~/.gitignore
-        editor = vim
-	quotepath = false
+    excludesfile = ~/.gitignore
+    editor = vim
+    quotepath = false
 [apply]
-        whitespace = nowarn
+    whitespace = nowarn
 [mergetool]
-        keepBackup = false
+    keepBackup = false
 [difftool]
-        prompt = false
+    prompt = false
 [help]
-        autocorrect = 1
+    autocorrect = 1
 [push]
-        # See `git help config` (search for push.default)
-        # for more information on different options of the below setting.
-        #
-        # Setting to git 2.0 default to suppress warning message
-	default = current
+    # See `git help config` (search for push.default)
+    # for more information on different options of the below setting.
+    #
+    # Setting to git 2.0 default to suppress warning message
+    default = current
 [pull]
-	ff = only
+    ff = only
 [user]
-	name = Jim Tilander
-	email = jim@tilander.org
+    name = Jim Tilander
+    email = jim@tilander.org
