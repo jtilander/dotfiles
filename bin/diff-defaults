@@ -1,0 +1,14 @@
+#!/bin/sh
+
+PREV=/tmp/.__defaults_prev.txt
+CURR=/tmp/.__defaults_curr.txt
+
+if [ -f "$CURR" ]; then
+	mv "$CURR" "$PREV"
+fi
+
+defaults read > "$CURR"
+
+if [ -f "$PREV" ]; then
+	icdiff "$PREV" "$CURR"
+fi
