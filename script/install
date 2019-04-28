@@ -15,7 +15,9 @@ done
 if [ "$(uname -s)" == "Darwin" ]; then
 	# Run Homebrew through the Brewfile
 	printf "[\e[92mok\e[0m] Running brew bundle...\n"
-	brew bundle > /dev/null
+	brew bundle | grep 'Installing ' | while read ignore package; do
+		printf "[\e[92mok\e[0m] Brew installed %s\n" $package
+	done
 else
 	sudo apt-get install -y $(cat Aptfile)
 fi

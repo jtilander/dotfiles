@@ -7,5 +7,7 @@ if [ "$(uname -s)" != "Darwin" ]; then
 	exit 0
 fi
 
-printf "[\e[92mok\e[0m] Running macOS softwareupdate...\n"
-sudo softwareupdate -i -a
+# DISABLE: This takes way too long...
+
+# printf "[\e[92mok\e[0m] Running macOS softwareupdate...\n"
+# sudo softwareupdate -i -a
