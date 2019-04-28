@@ -3,8 +3,8 @@
 
 
 update:
-	./bin/dot
+	@./bin/dot
 
 provision:
-	./script/bootstrap
+	@./script/bootstrap
 

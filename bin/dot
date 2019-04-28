@@ -7,19 +7,21 @@
 export ZSH=$HOME/.dotfiles
 
 if [ "$(uname -s)" = "Darwin" ]; then
+	printf "[\e[92mok\e[0m] Detected macos.\n"
+
 	# Set macOS defaults
 	$ZSH/macos/set-defaults.sh
 
 	# Install homebrew
-	$ZSH/homebrew/install.sh 2>&1
+	$ZSH/homebrew/install.sh
 
 	# Upgrade homebrew
-	echo "› brew update"
-	brew update
+	printf "[\e[92mok\e[0m] Running brew update\n"
+	brew update > /dev/null
 else
+	printf "[\e[92mok\e[0m] Assuming linux.\n"
 	sudo apt-get update
 fi
 
 # Install software
-echo "› $ZSH/script/install"
 $ZSH/script/install

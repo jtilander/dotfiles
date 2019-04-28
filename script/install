@@ -6,25 +6,29 @@
 
 cd "$(dirname $0)"/..
 
+# find the installers and run them iteratively
+find . -name install.sh | while read installer; do
+	printf "[\e[92mok\e[0m] Running %s\n" ${installer}
+	sh -c "${installer}"
+done
+
 if [ "$(uname -s)" == "Darwin" ]; then
 	# Run Homebrew through the Brewfile
-	echo "› brew bundle"
-	brew bundle
-
+	printf "[\e[92mok\e[0m] Running brew bundle...\n"
+	brew bundle > /dev/null
 else
-	echo "> apt-get install"
 	sudo apt-get install -y $(cat Aptfile)
 fi
 
 
+printf "[\e[92mok\e[0m] Installing gems...\n"
 while read gemname; do
+
+  # printf "[\e[92mok\e[0m] Installing gem %s\n" ${gemname}
+
   if [ "$(uname -s)" == "Darwin" ]; then
     brew gem info $gemname > /dev/null 2>&1 || brew gem install $gemname
   else
     sudo gem info $gemname > /dev/null 2>&1 || gem install $gemname
   fi
 done < "ruby/global.gems"
-
-
-# find the installers and run them iteratively
-find . -name install.sh | while read installer ; do sh -c "${installer}" ; done

@@ -48,14 +48,14 @@ if [ ! -f "$prefix/Installed Packages/Package Control.sublime-package" ]; then
 	if [ ! -d "$prefix/Installed Packages" ]; then
 		mkdir -p "$prefix/Installed Packages"
 	fi
-    echo 'Downloading package control seed'
+    printf "[\e[92mok\e[0m] Downloading package control seed...\n"
 	curl -sSL -f "https://packagecontrol.io/Package%20Control.sublime-package" > "$prefix/Installed Packages/Package Control.sublime-package"
 fi
-echo 'Linking SublimeText preferences'
+
+printf "[\e[92mok\e[0m] Linking SublimeText preferences.\n"
+
 symlink_preference 'User' 'Preferences.sublime-settings'
 symlink_preference 'User' 'Distraction Free.sublime-settings'
 symlink_preference 'User' 'Anaconda.sublime-settings'
 symlink_preference 'User' 'Package Control.sublime-settings'
 symlink_preference 'User' "$keymap"
-
-

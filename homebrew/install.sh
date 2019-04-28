@@ -6,22 +6,15 @@
 # using Homebrew.
 export HOMEBREW_NO_ANALYTICS=1
 
-if [ "$(uname -s)" != "Darwin" ]; then
-  exit 0
-fi
-
-
 # Check for Homebrew
 if test ! $(which brew)
 then
-  echo "  Installing Homebrew for you."
+  printf "[\e[94mok\e[0m] Installing homebrew...\n"
 
   # Install the correct homebrew for each OS type
-  if test "$(uname)" = "Darwin"
-  then
+  if test "$(uname)" = "Darwin" ; then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  elif test "$(expr substr $(uname -s) 1 5)" = "Linux"
-  then
+  elif test "$(expr substr $(uname -s) 1 5)" = "Linux" ; then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   fi
 
