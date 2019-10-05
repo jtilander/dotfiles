@@ -34,6 +34,7 @@
 		"SublimeLinter-contrib-nginx-lint",
 		"SublimeLinter-contrib-puppet-lint",
 		"SublimeLinter-shellcheck",
+		"TabNine",
 		"Theme - Seti Monokai",
 		"TypeScript Syntax"
 	]
