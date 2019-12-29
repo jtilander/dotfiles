@@ -1,0 +1,57 @@
+[
+{ "key": "ctrl+right",         "command": "cursorWordEndRight",
+                               "when": "editorTextFocus" },
+{ "key": "shift+ctrl+right",   "command": "cursorWordEndRightSelect",
+                               "when": "editorTextFocus" },
+{ "key": "ctrl+left",          "command": "cursorWordStartLeft",
+                               "when": "editorTextFocus" },
+{ "key": "shift+ctrl+left",    "command": "cursorWordStartLeftSelect",
+                               "when": "editorTextFocus" },
+{ "key": "ctrl+f",             "command": "actions.find" },
+{ "key": "shift+cmd+o",        "command": "workbench.action.quickOpen" },
+{ "key": "shift+ctrl+down",    "command": "editor.action.moveLinesDownAction",
+                               "when": "editorTextFocus && !editorReadonly" },
+{ "key": "shift+ctrl+up",      "command": "editor.action.moveLinesUpAction",
+                               "when": "editorTextFocus && !editorReadonly" },
+{ "key": "ctrl+c",             "command": "editor.action.clipboardCopyAction",
+                               "when": "editorTextFocus" },
+{ "key": "ctrl+x",             "command": "editor.action.clipboardCutAction",
+                               "when": "editorTextFocus && !editorReadonly" },
+{ "key": "ctrl+v",             "command": "editor.action.clipboardPasteAction",
+                               "when": "editorTextFocus && !editorReadonly" },
+{ "key": "cmd+u",              "command": "cursorUndo",
+                               "when": "editorTextFocus" },
+{ "key": "ctrl+backspace",     "command": "deleteWordLeft",
+                               "when": "editorTextFocus && !editorReadonly" },
+{ "key": "ctrl+delete",        "command": "deleteWordRight",
+                            "when": "editorTextFocus && !editorReadonly"
+                        },
+                        {
+                            "key": "ctrl+end",
+                            "command": "workbench.action.terminal.scrollToBottom",
+                            "when": "terminalFocus"
+                        },
+                        {
+                            "key": "cmd+end",
+                            "command": "-workbench.action.terminal.scrollToBottom",
+                            "when": "terminalFocus"
+                        },
+                        {
+                            "key": "ctrl+home",
+                            "command": "workbench.action.terminal.scrollToTop",
+                            "when": "terminalFocus"
+                        },
+                        {
+                            "key": "cmd+home",
+                            "command": "-workbench.action.terminal.scrollToTop",
+                            "when": "terminalFocus"
+                        },
+                        {
+                            "key": "f7",
+                            "command": "workbench.action.tasks.build"
+                        },
+                        {
+                            "key": "shift+cmd+b",
+                            "command": "-workbench.action.tasks.build"
+                        }
+                    ]

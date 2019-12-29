@@ -2,7 +2,8 @@ alias reload!='. ~/.zshrc'
 
 alias cls='clear' # Good 'ol Clear Screen command
 alias cd..='cd ..'
-alias ll='exa --long --header --extended --git'
+alias ll='exa --long --header --git'
+alias ls='exa --git'
 alias dir='exa --long --header --extended --git'
 alias colourify='grc /usr/local/bin/grc -es --colour=auto' # fix broken alias
 

@@ -64,4 +64,4 @@ cask 'macdown'
 cask 'omnidisksweeper'
 cask 'sublime-text'
 cask 'vlc'
-
+cask 'visual-studio-code'
