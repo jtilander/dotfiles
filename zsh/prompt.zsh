@@ -1,3 +1,16 @@
+# Finding all the colors:
+# for COLOR in {0..255} 
+# do
+#     for STYLE in "38;5"
+#     do 
+#         TAG="\033[${STYLE};${COLOR}m"
+#         STR="${STYLE};${COLOR}"
+#         echo -ne "${TAG}${STR}${NONE}  "
+#     done
+#     echo
+# done
+
+
 autoload colors && colors
 # cheers, @ehrenmurdick
 # http://github.com/ehrenmurdick/config/blob/master/zsh/prompt.zsh
@@ -20,7 +33,7 @@ git_dirty() {
   else
     if [[ $($git status --porcelain) == "" ]]
     then
-      echo "on %{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}"
+      echo "on \e[38;5;28m$(git_prompt_info)%{$reset_color%}"
     else
       echo "on %{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}"
     fi
@@ -51,7 +64,7 @@ need_push () {
 }
 
 directory_name() {
-  echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
+  echo "\e[38;5;26m%1/%\/%{$reset_color%}"
 }
 
 battery_status() {
@@ -64,7 +77,7 @@ host_name() {
 
 export PROMPT=$'\n[$(host_name)] $(directory_name) $(git_dirty)$(need_push)› '
 set_prompt () {
-  export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
+  export RPROMPT="%{$fg_bold[default]%}%{$reset_color%}"
 }
 
 precmd() {
