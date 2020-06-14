@@ -3,9 +3,9 @@
 	[
 		"Activision"
 	],
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"color_scheme": "Packages/MarkdownLight/MarkdownLight.tmTheme",
 	"draw_white_space": "all",
-	"font_size": 18,
+	"font_size": 23,
 	"ignored_packages":
 	[
 		"ANTLR syntax highlight",

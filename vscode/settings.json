@@ -34,9 +34,14 @@
 
   "workbench.startupEditor": "newUntitledFile",
   "editor.multiCursorModifier": "ctrlCmd",
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 0,
 
   "python.pythonPath": "python3",
 
-  "explorer.openEditors.visible": 0
+  "explorer.openEditors.visible": 0,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "update.mode": "none",
+  "debug.allowBreakpointsEverywhere": true,
+  "debug.inlineValues": true
 }
