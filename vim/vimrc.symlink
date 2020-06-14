@@ -1,9 +1,5 @@
 "
 "
-"
-"
-"
-"
 
 
 " ----------------------------------------------------------------------------
@@ -14,7 +10,7 @@
 
 	call plug#begin('~/.vim/plugged')
 		" Colors
-		Plug 'tomasr/molokai'
+		Plug 'NLKNguyen/papercolor-theme'
 
 		" File browser
 		Plug 'scrooloose/nerdtree'
@@ -201,7 +197,11 @@
 		let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 	" }
 
-
+	" Colors {
+		set t_Co=256
+		set background=light
+		colorscheme PaperColor
+	" }
 
 " ----------------------------------------------------------------------------
 "
