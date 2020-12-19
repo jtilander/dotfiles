@@ -64,11 +64,18 @@ directory_name() {
 }
 
 export PROMPT=$'\n$(directory_name) $(git_dirty)$(need_push)› '
-set_prompt () {
-  export RPROMPT="%{$fg_bold[default]%}%{$reset_color%}"
+
+preexec() {
+  mytimer=${mytimer:-$SECONDS}
 }
 
 precmd() {
   title "zsh" "%m" "%55<...<%~"
-  set_prompt
+  
+  if [ $mytimer ]; then
+    mydisplay=$(($SECONDS - $mytimer))
+    mydisplay=$(printf '%.2f\n' $mydisplay)
+    export RPROMPT="${mydisplay}s"
+    unset mytimer
+  fi
 }
