@@ -10,10 +10,7 @@
 #     echo
 # done
 
-
 autoload colors && colors
-# cheers, @ehrenmurdick
-# http://github.com/ehrenmurdick/config/blob/master/zsh/prompt.zsh
 
 if (( $+commands[git] ))
 then
@@ -41,9 +38,8 @@ git_dirty() {
 }
 
 git_prompt_info () {
- ref=$($git symbolic-ref HEAD 2>/dev/null) || return
-# echo "(%{\e[0;33m%}${ref#refs/heads/}%{\e[0m%})"
- echo "${ref#refs/heads/}"
+  ref=$($git symbolic-ref HEAD 2>/dev/null) || return
+  echo "${ref#refs/heads/}"
 }
 
 # This assumes that you always have an origin named `origin`, and that you only
@@ -67,15 +63,7 @@ directory_name() {
   echo "\e[38;5;26m%1/%\/%{$reset_color%}"
 }
 
-battery_status() {
-  $ZSH/bin/battery-status
-}
-
-host_name() {
-  hostname
-}
-
-export PROMPT=$'\n[$(host_name)] $(directory_name) $(git_dirty)$(need_push)› '
+export PROMPT=$'\n$(directory_name) $(git_dirty)$(need_push)› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[default]%}%{$reset_color%}"
 }
