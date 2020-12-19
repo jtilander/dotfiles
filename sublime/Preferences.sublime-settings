@@ -3,6 +3,7 @@
 	[
 		"Activision"
 	],
+	"auto_complete": false,
 	"color_scheme": "Packages/MarkdownLight/MarkdownLight.tmTheme",
 	"draw_white_space": "all",
 	"font_size": 23,
