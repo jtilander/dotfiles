@@ -60,10 +60,10 @@ need_push () {
 }
 
 directory_name() {
-  echo "\e[38;5;26m%1/%\/%{$reset_color%}"
+  echo "%{\e[38;5;26m%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(directory_name) $(git_dirty)$(need_push)› '
+export PROMPT=$'\n[%(?.✓.%?)]$(directory_name) $(git_dirty)$(need_push)› '
 
 preexec() {
   mytimer=${mytimer:-$SECONDS}
