@@ -63,7 +63,7 @@ directory_name() {
   echo "%{\e[38;5;26m%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n[%(?.%{\e[38;5;34m%}✓.%{\e[38;5;124m%}%?)%{$reset_color%}]$(directory_name) $(git_dirty)$(need_push)› '
+export PROMPT=$'\n[%(?.%{\e[38;5;34m%}✓.%{\e[38;5;124m%}%?)%{$reset_color%}] $(directory_name) $(git_dirty)$(need_push)› '
 
 preexec() {
   mytimer=${mytimer:-$SECONDS}
