@@ -11,6 +11,7 @@
 	call plug#begin('~/.vim/plugged')
 		" Colors
 		Plug 'NLKNguyen/papercolor-theme'
+		Plug 'tomasr/molokai'
 
 		" File browser
 		Plug 'scrooloose/nerdtree'
