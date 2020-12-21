@@ -49,6 +49,7 @@ brew 'vim'
 brew 'wget'
 brew 'xcbeautify'
 brew 'youtube-dl'
+brew 'bat'
 
 ###
 ###
