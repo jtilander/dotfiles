@@ -17,7 +17,9 @@ brew 'docker-completion'
 brew 'docker-compose-completion'
 brew 'docker-machine-completion'
 brew 'exa'
+brew 'ffmpeg'
 brew 'fzf'
+brew 'git-delta'
 brew 'go'
 brew 'graphviz'
 brew 'grc'
@@ -47,7 +49,6 @@ brew 'vim'
 brew 'wget'
 brew 'xcbeautify'
 brew 'youtube-dl'
-brew 'ffmpeg'
 
 ###
 ###

@@ -23,6 +23,7 @@
     excludesfile = ~/.gitignore
     editor = vim
     quotepath = false
+    pager = delta
 [apply]
     whitespace = nowarn
 [mergetool]
@@ -42,3 +43,16 @@
 [user]
     name = Jim Tilander
     email = jim@tilander.org
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    features = side-by-side line-numbers decorations
+    whitespace-error-style = 22 reverse
+    syntax-theme = GitHub
+
+[delta "decorations"]
+    commit-decoration-style = bold box ul
+    file-style = bold ul
+    file-decoration-style = none
