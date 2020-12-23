@@ -10,6 +10,9 @@ function symlink_preference() {
     name=$1
     original="$prefix/$name"
     new="$HOME/.dotfiles/vscode/$name"
+    
+    mkdir -p "$prefix"
+    
     if [ -f "$original" ]; then
         mv "$original" "${original}.backup"
     fi
