@@ -28,15 +28,14 @@
 		"Package Control",
 		"PlainTasks",
 		"PowerShell",
-		"Pretty JSON",
 		"Puppet",
 		"Solarized Color Scheme",
 		"SublimeLinter",
 		"SublimeLinter-contrib-nginx-lint",
 		"SublimeLinter-contrib-puppet-lint",
 		"SublimeLinter-shellcheck",
-		"TabNine",
+		"Tabnine",
 		"Theme - Seti Monokai",
-		"TypeScript Syntax"
-	]
+		"TypeScript Syntax",
+	],
 }

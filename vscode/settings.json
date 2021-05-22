@@ -34,7 +34,7 @@
 
   "workbench.startupEditor": "newUntitledFile",
   "editor.multiCursorModifier": "ctrlCmd",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 2,
 
   "python.pythonPath": "python3",
 
@@ -43,5 +43,10 @@
   "telemetry.enableTelemetry": false,
   "update.mode": "none",
   "debug.allowBreakpointsEverywhere": true,
-  "debug.inlineValues": true
+  "debug.inlineValues": true,
+  "workbench.colorTheme": "Default Dark+",
+  "editor.minimap.enabled": false,
+  "workbench.activityBar.visible": true,
+  "workbench.iconTheme": "vs-minimal",
+  "editor.wordWrapColumn": 140
 }

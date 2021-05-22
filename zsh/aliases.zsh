@@ -9,3 +9,7 @@ alias colourify='grc /usr/local/bin/grc -es --colour=auto' # fix broken alias
 alias kc=kubectl
 
 alias lg='lazygit'
+
+
+# TODO: Find out where 'colourify make' comes from?!
+unalias make
