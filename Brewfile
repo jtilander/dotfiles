@@ -57,7 +57,6 @@ brew 'youtube-dl'
 ###
 ###
 
-cask 'balenaetcher'
 cask 'beyond-compare'
 cask 'dash'
 cask 'docker'
@@ -70,4 +69,3 @@ cask 'sublime-text'
 cask 'vlc'
 cask 'visual-studio-code'
 cask 'applepi-baker'
-
