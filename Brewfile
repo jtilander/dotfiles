@@ -69,3 +69,5 @@ cask 'omnidisksweeper'
 cask 'sublime-text'
 cask 'vlc'
 cask 'visual-studio-code'
+cask 'applepi-baker'
+
