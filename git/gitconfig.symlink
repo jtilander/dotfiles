@@ -56,3 +56,5 @@
     commit-decoration-style = bold box ul
     file-style = bold ul
     file-decoration-style = none
+[init]
+	defaultBranch = main

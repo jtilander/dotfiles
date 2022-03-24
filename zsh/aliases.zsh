@@ -12,4 +12,4 @@ alias lg='lazygit'
 
 
 # TODO: Find out where 'colourify make' comes from?!
-unalias make
+# unalias make

@@ -52,6 +52,7 @@ brew 'vim'
 brew 'wget'
 brew 'xcbeautify'
 brew 'youtube-dl'
+brew 'llvm'
 
 ###
 ###
@@ -59,7 +60,7 @@ brew 'youtube-dl'
 
 cask 'beyond-compare'
 cask 'dash'
-cask 'docker'
+#cask 'docker'
 cask 'gitup'
 cask 'iTerm2'
 cask 'java'
