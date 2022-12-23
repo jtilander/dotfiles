@@ -6,7 +6,7 @@
 	"auto_complete": false,
 	"color_scheme": "Packages/MarkdownLight/MarkdownLight.tmTheme",
 	"draw_white_space": "all",
-	"font_size": 21,
+	"font_size": 18,
 	"ignored_packages":
 	[
 		"ANTLR syntax highlight",
