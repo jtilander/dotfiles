@@ -6,12 +6,12 @@
 	"auto_complete": false,
 	"color_scheme": "Packages/MarkdownLight/MarkdownLight.tmTheme",
 	"draw_white_space": "all",
-	"font_size": 18,
+	"font_size": 19,
 	"ignored_packages":
 	[
 		"ANTLR syntax highlight",
-		"sublime-sum",
 		"Vintage",
 	],
 	"word_wrap": "false",
+	"index_files": true,
 }

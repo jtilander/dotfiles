@@ -44,7 +44,7 @@
   "update.mode": "none",
   "debug.allowBreakpointsEverywhere": true,
   "debug.inlineValues": true,
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "Default High Contrast Light",
   "editor.minimap.enabled": false,
   "workbench.activityBar.visible": true,
   "workbench.iconTheme": "vs-minimal",
